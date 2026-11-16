@@ -7,7 +7,7 @@ This product belongs to the **Semi** brand. Colours, fonts, logo, voice and allo
 - Accent use: **Tiết chế**. Màu chính chỉ cho hành động chính (một nút chính mỗi vùng), mục đang chọn, link và focus. Nền màu chính diện rộng: không.
 - Share of a screen, roughly: neutral 80%, surface 15%, accent 5%.
 - One primary button per area (`Button variant="primary"`); everything else secondary or ghost.
-- States: `ring-focus`, `border-focus`, `bg-accent-subtle`, `border-accent-line`; coloured text `text-accent-fg`. Never `primary-500/15`-style classes (`accent-state-token`).
+- States: `ring-focus`, `border-focus`, `bg-accent-subtle`, `border-accent-line`; coloured text `text-accent-fg`. Never `primary-500/15`-style classes (`accent-state-token`) or `bg-primary-500` fills (`primary-fill`): main actions are `bg-accent` + `text-on-accent`; `primary-*` is for charts and illustrations.
 - This brand has no secondary colour: do not add one.
 - Status (success, error, warning) keeps Semi's status tokens, never the brand colour.
 - Never define brand colours or override Semi tokens in this app (`--color-primary-*`, `--semi-*`, `@theme` colours, hex values): `semi-lint` blocks it (`brand-override`).
