@@ -16,7 +16,7 @@
     "sans": "Inter",
     "display": "Plus Jakarta Sans"
   },
-  "semi": "^0.24.0",
+  "semi": ">=0.26.0 <1.0.0",
   "voice": {
     "tone": "neutral",
     "address": "bạn",
