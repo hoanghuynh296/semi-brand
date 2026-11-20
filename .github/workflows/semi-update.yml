@@ -27,7 +27,8 @@ jobs:
         run: |
           tag=$(git ls-remote --tags --refs https://github.com/hoanghuynh296/semi-nextjs-codebase.git 'v*' | sed 's#.*refs/tags/##' | sort -V | tail -1)
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
-          npm install --install-links -D "@semi/ui@github:hoanghuynh296/semi-nextjs-codebase#$tag"
+          npm pkg set "devDependencies.@semi/ui=github:hoanghuynh296/semi-nextjs-codebase#$tag"
+          rm -f package-lock.json && npm install --no-audit --no-fund
           npx semi-brand build || true
           if git diff --quiet -I'"semiVersion"' -I'@semi/ui [0-9]' -- dist BRAND.md AGENTS.brand.md; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
