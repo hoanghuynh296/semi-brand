@@ -126,7 +126,7 @@ thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `pri
 | viền ô nhập Soft (tối) | control-line / nền | 3.41 | 3 | đạt |
 | chữ mờ Sharp (tối) | text-muted / nền | 5.63 | 4.5 | đạt |
 | viền ô nhập Sharp (tối) | control-line / nền | 3.26 | 3 | đạt |
-| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.25 | 4.5 | đạt |
+| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.26 | 4.5 | đạt |
 | chữ trạng thái thành công (tối) | success-fg / nền | 5.47 | 4.5 | đạt |
 | chữ trạng thái cảnh báo (tối) | warning-fg / nền | 8.46 | 4.5 | đạt |
 | chữ trạng thái thông tin (tối) | info-fg / nền | 6.60 | 4.5 | đạt |
@@ -141,7 +141,7 @@ thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `pri
 | viền ô nhập Soft (sáng) | control-line / nền | 3.71 | 3 | đạt |
 | chữ mờ Sharp (sáng) | text-muted / nền | 5.90 | 4.5 | đạt |
 | viền ô nhập Sharp (sáng) | control-line / nền | 3.78 | 3 | đạt |
-| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.45 | 4.5 | đạt |
+| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.46 | 4.5 | đạt |
 | chữ trạng thái thành công (sáng) | success-fg / nền | 6.16 | 4.5 | đạt |
 | chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.14 | 4.5 | đạt |
 | chữ trạng thái thông tin (sáng) | info-fg / nền | 5.14 | 4.5 | đạt |
@@ -149,4 +149,4 @@ thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `pri
 ## Lưu ý
 
 - Chưa có logo: brand book và app mới chỉ hiện tên bằng chữ. Đưa logo vào assets/logo.svg rồi chạy set logo=assets/logo.svg
-- Màu chính gần màu lỗi (đỏ) của Semi (lệch sắc 24°, ΔE 0.14 so với #be123c): trạng thái luôn kèm icon hoặc chữ, đừng chỉ dựa vào màu
+- Màu lỗi được xoay 8° (#f43f5e → #f23e72) để không lẫn với màu chính
