@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.3.0 - 2026-11-20
+
+### Từ Semi (@semi/ui v0.30.0; brand.json không đổi lựa chọn nào)
+- `semi` range `>=0.29.0 <1.0.0` -> `>=0.30.0 <1.0.0`; dev dependency @semi/ui v0.29.2 -> v0.30.0.
+- **Màu lỗi xoay 8°** (`#f43f5e` → `#f23e72`, đỏ hơi ngả hồng) để không lẫn với màu cam chính `#DD592A` (trước chỉ cách 22° sắc độ). `brand.css` ghi đè `--semi-danger-fg | bg | border | solid` ở cả hai theme; độ sáng giữ nguyên nên chữ lỗi vẫn đạt AA (30/30 cặp đạt).
+- Token đổi tên theo vai trò ở Semi (`text-kpi` → `text-figure`, `z-keypad` → `z-sheet`) không đụng tới kit; luật cho agent (`AGENTS.brand.md`) không đổi.
+
+### Thương hiệu
+- Không đổi.
+
 ## 2.2.0 - 2026-11-20
 
 ### Từ Semi (@semi/ui v0.29.0; brand.json không đổi lựa chọn nào)
