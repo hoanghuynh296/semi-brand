@@ -121,17 +121,32 @@ thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `pri
 | viền focus (tối) | primary-400 / nền | 4.79 | 3 | đạt |
 | nút tách khỏi nền (tối) | primary-500 / nền | 4.19 | 3 | đạt |
 | chữ mờ Flat (tối) | text-muted / nền | 5.53 | 4.5 | đạt |
+| viền ô nhập Flat (tối) | control-line / nền | 3.22 | 3 | đạt |
 | chữ mờ Soft (tối) | text-muted / nền | 5.97 | 4.5 | đạt |
+| viền ô nhập Soft (tối) | control-line / nền | 3.41 | 3 | đạt |
 | chữ mờ Sharp (tối) | text-muted / nền | 5.63 | 4.5 | đạt |
+| viền ô nhập Sharp (tối) | control-line / nền | 3.26 | 3 | đạt |
+| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.25 | 4.5 | đạt |
+| chữ trạng thái thành công (tối) | success-fg / nền | 5.47 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 8.46 | 4.5 | đạt |
+| chữ trạng thái thông tin (tối) | info-fg / nền | 6.60 | 4.5 | đạt |
 | nút chính (sáng) | chữ #0c0d0e / primary-500 | 5.13 | 4.5 | đạt |
 | nút chính khi hover (sáng) | chữ #0c0d0e / primary-400 | 7.61 | 4.5 | đạt |
 | chữ màu chính (sáng) | primary-700 / nền + nền chọn | 5.32 | 4.5 | đạt |
 | viền focus (sáng) | primary-700 / nền | 5.58 | 3 | đạt |
 | nút tách khỏi nền (sáng) | primary-500 / nền | 3.29 | 3 | đạt |
 | chữ mờ Flat (sáng) | text-muted / nền | 5.25 | 4.5 | đạt |
+| viền ô nhập Flat (sáng) | control-line / nền | 3.48 | 3 | đạt |
 | chữ mờ Soft (sáng) | text-muted / nền | 5.67 | 4.5 | đạt |
+| viền ô nhập Soft (sáng) | control-line / nền | 3.71 | 3 | đạt |
 | chữ mờ Sharp (sáng) | text-muted / nền | 5.90 | 4.5 | đạt |
+| viền ô nhập Sharp (sáng) | control-line / nền | 3.78 | 3 | đạt |
+| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.45 | 4.5 | đạt |
+| chữ trạng thái thành công (sáng) | success-fg / nền | 6.16 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.14 | 4.5 | đạt |
+| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.14 | 4.5 | đạt |
 
 ## Lưu ý
 
-- Màu chính gần màu lỗi (đỏ) của Semi: trạng thái luôn kèm icon hoặc chữ, đừng chỉ dựa vào màu
+- Chưa có logo: brand book và app mới chỉ hiện tên bằng chữ. Đưa logo vào assets/logo.svg rồi chạy set logo=assets/logo.svg
+- Màu chính gần màu lỗi (đỏ) của Semi (lệch sắc 24°, ΔE 0.14 so với #be123c): trạng thái luôn kèm icon hoặc chữ, đừng chỉ dựa vào màu
