@@ -101,7 +101,7 @@ Icon: bộ icon của Semi (`<Icon name>`, nét 1.75), không trộn bộ icon k
 
 | Việc | Token | Tối | Sáng |
 |---|---|---|---|
-| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#dd592a` / `#0c0d0e` | `#dd592a` / `#0c0d0e` |
+| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#dd592a` / `#0c0d0e` | `#bd4516` / `#ffffff` |
 | Chữ, icon màu chính | `text-accent-fg` | `#e8896a` | `#9d3100` |
 | Viền focus, ô nhập đang gõ | `ring-focus`, `border-focus` | `#e8896a` | `#9d3100` |
 | Mục đang chọn (nền nhạt, viền) | `bg-accent-subtle`, `border-accent-line` | nhạt từ `#e8896a` | nhạt từ `#9d3100` |
@@ -130,11 +130,11 @@ thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `pri
 | chữ trạng thái thành công (tối) | success-fg / nền | 5.47 | 4.5 | đạt |
 | chữ trạng thái cảnh báo (tối) | warning-fg / nền | 8.46 | 4.5 | đạt |
 | chữ trạng thái thông tin (tối) | info-fg / nền | 6.60 | 4.5 | đạt |
-| nút chính (sáng) | chữ #0c0d0e / primary-500 | 5.13 | 4.5 | đạt |
-| nút chính khi hover (sáng) | chữ #0c0d0e / primary-400 | 7.61 | 4.5 | đạt |
+| nút chính (sáng) | chữ #ffffff / primary-600 | 5.22 | 4.5 | đạt |
+| nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 7.31 | 4.5 | đạt |
 | chữ màu chính (sáng) | primary-700 / nền + nền chọn | 5.32 | 4.5 | đạt |
 | viền focus (sáng) | primary-700 / nền | 5.58 | 3 | đạt |
-| nút tách khỏi nền (sáng) | primary-500 / nền | 3.29 | 3 | đạt |
+| nút tách khỏi nền (sáng) | primary-600 / nền | 4.52 | 3 | đạt |
 | chữ mờ Flat (sáng) | text-muted / nền | 5.25 | 4.5 | đạt |
 | viền ô nhập Flat (sáng) | control-line / nền | 3.48 | 3 | đạt |
 | chữ mờ Soft (sáng) | text-muted / nền | 5.67 | 4.5 | đạt |

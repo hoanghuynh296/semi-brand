@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.4.0 - 2026-11-22
+
+### Từ Semi (@semi/ui v0.35.0; brand.json không đổi lựa chọn nào)
+- `semi` range `>=0.30.0 <1.0.0` -> `>=0.35.0 <1.0.0`; dev dependency @semi/ui v0.30.0 -> v0.35.0. Build lại `dist/` và BRAND.md.
+- **Màu chính theo từng theme** (quyết định C-024, ds#84): theme sáng dùng bậc 600 (`#bd4516`, chữ trên nút `#ffffff`, hover `#9d3100`), theme tối dùng bậc 400-500 (`#dd592a`, chữ trên nút `#0c0d0e`). Trước đây cả hai theme dùng `#dd592a`.
+- **Nền app của Flat sáng** `#ffffff` -> `#fcf9f8` (panel giữ `#ffffff`) (ds#88).
+- Thay đổi nhìn thấy: nút chính và accent ở theme sáng đậm hơn, chữ nút chuyển sang trắng; nền trang Flat sáng hơi ấm thay vì trắng thuần. Theme tối không đổi. Bảng đọc rõ: 30/30 cặp đạt AA.
+
+### Thương hiệu
+- Không đổi lựa chọn nào trong brand.json.
+
+
 ## 2.3.0 - 2026-11-20
 
 ### Từ Semi (@semi/ui v0.30.0; brand.json không đổi lựa chọn nào)
