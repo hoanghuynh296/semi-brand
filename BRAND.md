@@ -12,6 +12,7 @@ không định nghĩa màu, font hay style riêng trong sản phẩm. Muốn đ�
 | Màu chính | `#dd592a` (nằm ở `primary-500`) |
 | Màu phụ | không có |
 | Màu trung tính | phủ theo màu chính |
+| Nút chính | màu thương hiệu |
 | Style | Flat (mặc định), Soft, Sharp |
 | Font | Inter (giao diện, nội dung) · Plus Jakarta Sans (tiêu đề, số KPI) |
 | Giọng văn | Trung tính, gọi người dùng “bạn” |
@@ -117,34 +118,46 @@ thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `pri
 |---|---|---:|---:|---|
 | nút chính (tối) | chữ #0c0d0e / primary-500 | 5.13 | 4.5 | đạt |
 | nút chính khi hover (tối) | chữ #0c0d0e / primary-400 | 7.61 | 4.5 | đạt |
-| chữ màu chính (tối) | primary-400 / nền + nền chọn | 4.79 | 4.5 | đạt |
-| viền focus (tối) | primary-400 / nền | 4.79 | 3 | đạt |
-| nút tách khỏi nền (tối) | primary-500 / nền | 4.19 | 3 | đạt |
-| chữ mờ Flat (tối) | text-muted / nền | 5.53 | 4.5 | đạt |
-| viền ô nhập Flat (tối) | control-line / nền | 3.22 | 3 | đạt |
-| chữ mờ Soft (tối) | text-muted / nền | 5.97 | 4.5 | đạt |
-| viền ô nhập Soft (tối) | control-line / nền | 3.41 | 3 | đạt |
-| chữ mờ Sharp (tối) | text-muted / nền | 5.63 | 4.5 | đạt |
-| viền ô nhập Sharp (tối) | control-line / nền | 3.26 | 3 | đạt |
-| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.26 | 4.5 | đạt |
-| chữ trạng thái thành công (tối) | success-fg / nền | 5.47 | 4.5 | đạt |
-| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 8.46 | 4.5 | đạt |
-| chữ trạng thái thông tin (tối) | info-fg / nền | 6.60 | 4.5 | đạt |
+| chữ màu chính (tối) | primary-400 / nền + nền chọn | 4.80 | 4.5 | đạt |
+| viền focus (tối) | primary-400 / nền | 5.29 | 3 | đạt |
+| nút tách khỏi nền (tối) | primary-500 / nền | 4.53 | 3 | đạt |
+| chữ mờ Flat (tối) | text-muted / nền | 6.05 | 4.5 | đạt |
+| viền ô nhập Flat (tối) | control-line / nền | 3.38 | 3 | đạt |
+| chữ mờ Soft (tối) | text-muted / nền | 6.45 | 4.5 | đạt |
+| viền ô nhập Soft (tối) | control-line / nền | 3.59 | 3 | đạt |
+| chữ mờ Sharp (tối) | text-muted / nền | 6.25 | 4.5 | đạt |
+| viền ô nhập Sharp (tối) | control-line / nền | 3.47 | 3 | đạt |
+| chữ mờ trên thẻ Flat (tối) | text-muted / card + card-field | 5.31 | 4.5 | đạt |
+| thẻ tách khỏi nền Flat (tối) | card / app | 1.16 | 1.1 | đạt |
+| chữ mờ trên thẻ Soft (tối) | text-muted / card + card-field | 5.71 | 4.5 | đạt |
+| thẻ tách khỏi nền Soft (tối) | card / app | 1.17 | 1.1 | đạt |
+| chữ mờ trên thẻ Sharp (tối) | text-muted / card + card-field | 5.47 | 4.5 | đạt |
+| thẻ tách khỏi nền Sharp (tối) | card / app | 1.17 | 1.1 | đạt |
+| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.83 | 4.5 | đạt |
+| chữ trạng thái thành công (tối) | success-fg / nền | 6.06 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 9.37 | 4.5 | đạt |
+| chữ trạng thái thông tin (tối) | info-fg / nền | 7.30 | 4.5 | đạt |
 | nút chính (sáng) | chữ #ffffff / primary-600 | 5.22 | 4.5 | đạt |
 | nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 7.31 | 4.5 | đạt |
-| chữ màu chính (sáng) | primary-700 / nền + nền chọn | 5.32 | 4.5 | đạt |
-| viền focus (sáng) | primary-700 / nền | 5.58 | 3 | đạt |
-| nút tách khỏi nền (sáng) | primary-600 / nền | 4.52 | 3 | đạt |
-| chữ mờ Flat (sáng) | text-muted / nền | 5.25 | 4.5 | đạt |
-| viền ô nhập Flat (sáng) | control-line / nền | 3.48 | 3 | đạt |
-| chữ mờ Soft (sáng) | text-muted / nền | 5.67 | 4.5 | đạt |
-| viền ô nhập Soft (sáng) | control-line / nền | 3.71 | 3 | đạt |
-| chữ mờ Sharp (sáng) | text-muted / nền | 5.90 | 4.5 | đạt |
-| viền ô nhập Sharp (sáng) | control-line / nền | 3.78 | 3 | đạt |
-| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.46 | 4.5 | đạt |
-| chữ trạng thái thành công (sáng) | success-fg / nền | 6.16 | 4.5 | đạt |
-| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.14 | 4.5 | đạt |
-| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.14 | 4.5 | đạt |
+| chữ màu chính (sáng) | primary-700 / nền + nền chọn | 5.21 | 4.5 | đạt |
+| viền focus (sáng) | primary-700 / nền | 5.83 | 3 | đạt |
+| nút tách khỏi nền (sáng) | primary-600 / nền | 4.67 | 3 | đạt |
+| chữ mờ Flat (sáng) | text-muted / nền | 5.16 | 4.5 | đạt |
+| viền ô nhập Flat (sáng) | control-line / nền | 3.45 | 3 | đạt |
+| chữ mờ Soft (sáng) | text-muted / nền | 5.82 | 4.5 | đạt |
+| viền ô nhập Soft (sáng) | control-line / nền | 3.76 | 3 | đạt |
+| chữ mờ Sharp (sáng) | text-muted / nền | 6.00 | 4.5 | đạt |
+| viền ô nhập Sharp (sáng) | control-line / nền | 3.85 | 3 | đạt |
+| chữ mờ trên thẻ Flat (sáng) | text-muted / card + card-field | 4.55 | 4.5 | đạt |
+| thẻ tách khỏi nền Flat (sáng) | card / app | 1.12 | 1.1 | đạt |
+| chữ mờ trên thẻ Soft (sáng) | text-muted / card + card-field | 5.27 | 4.5 | đạt |
+| thẻ tách khỏi nền Soft (sáng) | card / app | 1.12 | 1.1 | đạt |
+| chữ mờ trên thẻ Sharp (sáng) | text-muted / card + card-field | 5.38 | 4.5 | đạt |
+| thẻ tách khỏi nền Sharp (sáng) | card / app | 1.12 | 1.1 | đạt |
+| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.60 | 4.5 | đạt |
+| chữ trạng thái thành công (sáng) | success-fg / nền | 6.31 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.30 | 4.5 | đạt |
+| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.27 | 4.5 | đạt |
 
 ## Lưu ý
 
