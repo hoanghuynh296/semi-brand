@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.5.0 - 2026-11-23
+
+### Từ Semi (@semi/ui v0.36.0; brand.json không đổi lựa chọn nào)
+- Rebuilt on Semi 0.36.0 (C-030/C-033 surfaces): dev dependency @semi/ui v0.35.0 -> v0.36.0; `dist/` và BRAND.md build lại.
+- Các bậc nền (canvas, app, panel, field, raised) theo bước nhỏ, đều của Semi 0.36.0; thêm `card` và `tint`. Màu chính, font, logo không đổi; tùy chọn mới (`neutral: "pure"`, `primaryStyle: "inverted"`) giữ mặc định.
+- Bảng đọc rõ: 42/42 cặp đạt AA (thêm các cặp chữ mờ trên thẻ, thẻ tách khỏi nền).
+
 ## 2.4.0 - 2026-11-22
 
 ### Từ Semi (@semi/ui v0.35.0; brand.json không đổi lựa chọn nào)
