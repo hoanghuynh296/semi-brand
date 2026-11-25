@@ -2,19 +2,16 @@
 # Semi: brand guideline
 
 Bộ nhận diện của **Semi** trên Semi Design System. Mọi sản phẩm cài `@semi/brand` và dùng đúng các giá trị này;
-không định nghĩa màu, font hay style riêng trong sản phẩm. Muốn đổi: sửa `brand.json` trong repo brand rồi chạy
+không định nghĩa màu hay font riêng trong sản phẩm. Muốn đổi: sửa `brand.json` trong repo brand rồi chạy
 `/semi-brand` (xem `@semi/ui/docs/BRANDS.md`).
 
 ## Lựa chọn
 
 | | |
 |---|---|
-| Màu chính | `#dd592a` (nằm ở `primary-500`) |
-| Màu phụ | không có |
-| Màu trung tính | phủ theo màu chính |
-| Nút chính | màu thương hiệu |
-| Style | Flat (mặc định), Soft, Sharp |
-| Font | Inter (giao diện, nội dung) · Plus Jakarta Sans (tiêu đề, số KPI) |
+| Màu chính | `#dd592a` (chữ trên nó `#0c0d0e`, hover `#f26c3f`) |
+| Màu phụ | không có (nút chính thứ hai dùng màu chính) |
+| Font | Inter (giao diện, nội dung) · Plus Jakarta Sans (hero, tiêu đề trang đọc, tab lớn) |
 | Giọng văn | Trung tính, gọi người dùng “bạn” |
 
 ## Thương hiệu này cho ai
@@ -27,11 +24,9 @@ không định nghĩa màu, font hay style riêng trong sản phẩm. Muốn đ�
 
 ## Cách dùng màu
 
-**Mức dùng màu chính: Tiết chế.** Màu chính chỉ cho hành động chính (một nút chính mỗi vùng), mục đang chọn, link và focus. Nền màu chính diện rộng: không.
+Màu chính chỉ cho nút chính của một trang, một hộp thoại hoặc nút chính của thanh điều hướng (bg-primary + text-on-primary, tối đa một nút tô màu mỗi trang / hộp thoại), badge đếm cần chú ý, nhãn “Mới” và gạch chân tab lớn đang chọn. Mọi thứ khác (nút thường, mục đang chọn, link, focus, trạng thái) là màu trung tính hoặc màu trạng thái của Semi.
 
-Tỉ lệ trên một màn hình (ước lượng): trung tính 80% · bề mặt 15% · màu chính 5%.
-
-- Màu chính là màu của hành động: nút chính (`bg-accent` + `text-on-accent`), link và chữ nhấn (`text-accent-fg`), mục đang chọn (`bg-accent-subtle`, `border-accent-line`), focus (`ring-focus`)
+- Nút chính: `Button variant="primary"` (`bg-primary` + `text-on-primary`). Nút thường, mục đang chọn, link và focus là màu trung tính của Semi
 - Thành công / lỗi / cảnh báo giữ màu trạng thái của Semi (`text-success-fg`, `bg-danger-bg` …), không dùng màu thương hiệu để báo trạng thái
 - Nền, chữ, viền: token ngữ nghĩa (`bg-panel`, `text-muted`, `border-line`), không mã màu
 
@@ -83,83 +78,24 @@ Mật độ và cỡ chữ không phải của thương hiệu: mỗi sản ph�
 
 Icon: bộ icon của Semi (`<Icon name>`, nét 1.75), không trộn bộ icon khác.
 
-## Màu chính (`primary-*`)
-
-| Sắc độ | Mã |
-|---|---|
-| 50 | `#faf6f4` |
-| 100 | `#f8e9e4` |
-| 200 | `#f5d2c6` |
-| 300 | `#f0b19d` |
-| 400 | `#e8896a` |
-| 500 | `#dd592a` |
-| 600 | `#bd4516` |
-| 700 | `#9d3100` |
-| 800 | `#792400` |
-| 900 | `#581700` |
-
 ## Token màu trong sản phẩm
 
-| Việc | Token | Tối | Sáng |
-|---|---|---|---|
-| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#dd592a` / `#0c0d0e` | `#bd4516` / `#ffffff` |
-| Chữ, icon màu chính | `text-accent-fg` | `#e8896a` | `#9d3100` |
-| Viền focus, ô nhập đang gõ | `ring-focus`, `border-focus` | `#e8896a` | `#9d3100` |
-| Mục đang chọn (nền nhạt, viền) | `bg-accent-subtle`, `border-accent-line` | nhạt từ `#e8896a` | nhạt từ `#9d3100` |
+| Việc | Token | Giá trị (cả hai theme) |
+|---|---|---|
+| Nút chính | `bg-primary` + `text-on-primary`, hover `bg-primary-hover` (hoặc `Button variant="primary"`) | `#dd592a` / `#0c0d0e` |
+| Badge đếm cần chú ý, nhãn “Mới”, gạch chân tab lớn đang chọn | `bg-primary` + `text-on-primary` | `#dd592a` |
 
-Không dùng `primary-500/15`, `ring-primary-500/50` … cho trạng thái: thang `primary-*` không đổi theo theme nên có
-thể biến mất trên nền (`semi-lint`: `accent-state-token`). Không tô nền hay viền bằng thang (`bg-primary-500`,
-`border-primary-500`): màu thương hiệu nằm ở `primary-500`, nút chính là `bg-accent` + `text-on-accent`;
-thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `primary-fill`).
+Mặt nền, chữ, viền, mục đang chọn và focus là màu trung tính của Semi, giống nhau cho mọi thương hiệu (`docs/TOKENS.md`).
 
 ## Kiểm tra đọc rõ (chữ ≥ 4.5:1, viền và nút so với nền ≥ 3:1)
 
 | Kiểm tra | Cặp | Tỉ lệ | Cần | |
 |---|---|---:|---:|---|
-| nút chính (tối) | chữ #0c0d0e / primary-500 | 5.13 | 4.5 | đạt |
-| nút chính khi hover (tối) | chữ #0c0d0e / primary-400 | 7.61 | 4.5 | đạt |
-| chữ màu chính (tối) | primary-400 / nền + nền chọn | 4.80 | 4.5 | đạt |
-| viền focus (tối) | primary-400 / nền | 5.29 | 3 | đạt |
-| nút tách khỏi nền (tối) | primary-500 / nền | 4.53 | 3 | đạt |
-| chữ mờ Flat (tối) | text-muted / nền | 6.05 | 4.5 | đạt |
-| viền ô nhập Flat (tối) | control-line / nền | 3.38 | 3 | đạt |
-| chữ mờ Soft (tối) | text-muted / nền | 6.45 | 4.5 | đạt |
-| viền ô nhập Soft (tối) | control-line / nền | 3.59 | 3 | đạt |
-| chữ mờ Sharp (tối) | text-muted / nền | 6.25 | 4.5 | đạt |
-| viền ô nhập Sharp (tối) | control-line / nền | 3.47 | 3 | đạt |
-| chữ mờ trên thẻ Flat (tối) | text-muted / card + card-field | 5.31 | 4.5 | đạt |
-| thẻ tách khỏi nền Flat (tối) | card / app | 1.16 | 1.1 | đạt |
-| chữ mờ trên thẻ Soft (tối) | text-muted / card + card-field | 5.71 | 4.5 | đạt |
-| thẻ tách khỏi nền Soft (tối) | card / app | 1.17 | 1.1 | đạt |
-| chữ mờ trên thẻ Sharp (tối) | text-muted / card + card-field | 5.47 | 4.5 | đạt |
-| thẻ tách khỏi nền Sharp (tối) | card / app | 1.17 | 1.1 | đạt |
-| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.83 | 4.5 | đạt |
-| chữ trạng thái thành công (tối) | success-fg / nền | 6.06 | 4.5 | đạt |
-| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 9.37 | 4.5 | đạt |
-| chữ trạng thái thông tin (tối) | info-fg / nền | 7.30 | 4.5 | đạt |
-| nút chính (sáng) | chữ #ffffff / primary-600 | 5.22 | 4.5 | đạt |
-| nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 7.31 | 4.5 | đạt |
-| chữ màu chính (sáng) | primary-700 / nền + nền chọn | 5.21 | 4.5 | đạt |
-| viền focus (sáng) | primary-700 / nền | 5.83 | 3 | đạt |
-| nút tách khỏi nền (sáng) | primary-600 / nền | 4.67 | 3 | đạt |
-| chữ mờ Flat (sáng) | text-muted / nền | 5.16 | 4.5 | đạt |
-| viền ô nhập Flat (sáng) | control-line / nền | 3.45 | 3 | đạt |
-| chữ mờ Soft (sáng) | text-muted / nền | 5.82 | 4.5 | đạt |
-| viền ô nhập Soft (sáng) | control-line / nền | 3.76 | 3 | đạt |
-| chữ mờ Sharp (sáng) | text-muted / nền | 6.00 | 4.5 | đạt |
-| viền ô nhập Sharp (sáng) | control-line / nền | 3.85 | 3 | đạt |
-| chữ mờ trên thẻ Flat (sáng) | text-muted / card + card-field | 4.55 | 4.5 | đạt |
-| thẻ tách khỏi nền Flat (sáng) | card / app | 1.12 | 1.1 | đạt |
-| chữ mờ trên thẻ Soft (sáng) | text-muted / card + card-field | 5.27 | 4.5 | đạt |
-| thẻ tách khỏi nền Soft (sáng) | card / app | 1.12 | 1.1 | đạt |
-| chữ mờ trên thẻ Sharp (sáng) | text-muted / card + card-field | 5.38 | 4.5 | đạt |
-| thẻ tách khỏi nền Sharp (sáng) | card / app | 1.12 | 1.1 | đạt |
-| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.60 | 4.5 | đạt |
-| chữ trạng thái thành công (sáng) | success-fg / nền | 6.31 | 4.5 | đạt |
-| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.30 | 4.5 | đạt |
-| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.27 | 4.5 | đạt |
+| chữ trên nút màu chính | #0c0d0e / primary #dd592a | 5.13 | 4.5 | đạt |
+| chữ trên nút màu chính khi hover | #0c0d0e / primary-hover #f26c3f | 6.48 | 4.5 | đạt |
+| nút màu chính tách khỏi nền (tối) | primary / canvas, app, panel | 4.59 | 3 | đạt |
+| nút màu chính tách khỏi nền (sáng) | primary / canvas, app, panel | 3.18 | 3 | đạt |
 
 ## Lưu ý
 
 - Chưa có logo: brand book và app mới chỉ hiện tên bằng chữ. Đưa logo vào assets/logo.svg rồi chạy set logo=assets/logo.svg
-- Màu lỗi được xoay 8° (#f43f5e → #f23e72) để không lẫn với màu chính

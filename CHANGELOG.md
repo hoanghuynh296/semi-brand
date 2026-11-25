@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.0.0 - 2026-11-25
+
+### Breaking — Từ Semi (@semi/ui v1.0.0 schema)
+- `semi` range `>=0.35.0 <1.0.0` -> `>=1.0.0 <2.0.0`; dựng lại toàn bộ `dist/brand.css`, `dist/brand.json`, `BRAND.md`, `AGENTS.brand.md` theo lược đồ brand kit Semi 1.0 (chỉ sinh màu chính / phụ, chữ trên nút, hover, chữ nhãn "Mới" và font).
+- Xoá các khoá cũ 0.x khỏi `brand.json`: `neutral` (`"tinted"`), `styles` (`flat` / `soft` / `sharp`), `color.accent` (`"restrained"`). Từ Semi 1.0 mọi thương hiệu dùng chung một style và bảng xám trung tính của `@semi/ui` (không còn xám phủ màu thương hiệu, không còn `accent-subtle` / `accent-line` hay thang màu primary).
+- Quy tắc màu thương hiệu 1.0 (`BRAND.md`, `AGENTS.brand.md`): màu chính (`#dd592a`, chữ `#0c0d0e`, hover `#f26c3f` dùng chung cả hai theme) chỉ dùng cho nút chính của trang / hộp thoại / thanh điều hướng, badge đếm cần chú ý, nhãn "Mới" và gạch chân tab lớn đang chọn.
+- Bảng đọc rõ: 4/4 cặp đạt AA (chữ trên nút chính 5.13:1, hover 6.48:1, nút tách nền tối 4.59:1, nền sáng 3.18:1).
+
+### Thương hiệu
+- Giữ nguyên màu chính `#DD592A`, không màu phụ, font Inter + Plus Jakarta Sans, giọng văn, brief và hình ảnh.
+
 ## 2.5.0 - 2026-11-23
 
 ### Từ Semi (@semi/ui v0.36.0; brand.json không đổi lựa chọn nào)
